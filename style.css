@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+:root{
+    --primary-color : #040214;
+    --secondary-color : #D9D9D9;
+    --light-primary : #081F35;
+    --private-red: #550A0A;
+    --roadwys-blue: #2C7CD7;
+
+}
+
+.BottomPartBg{
+    width:100%;
+    background-image: url('Assets/img/first_page_portrait.png');
+    background-size: contain;
+    
+    background-repeat: no-repeat;
+
+    
+}
