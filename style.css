@@ -18,3 +18,40 @@
 
     
 }
+
+.ViewBg{
+    width: 100%;
+    background-image: url(Assets/img/passenger_view_banner.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+::-webkit-select-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+.LiveBusBanner{
+    background-image: url(Assets/img/roadways_drive_icon.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.Duration {
+  position: relative;
+  
+  font-weight: bold;
+  
+  border: 1px solid #615f5f;
+  border-radius: 20px; /* Ellipse shape */
+  background-color: #eeeeee2a;
+
+  display: flex;
+  
+}
+
