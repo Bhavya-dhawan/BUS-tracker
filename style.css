@@ -55,3 +55,11 @@
   
 }
 
+
+.DriverViewBg{
+    width: 100%;
+    background-image: url(Assets/img/driver_view_bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
