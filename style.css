@@ -42,6 +42,23 @@
 
 }
 
+
+.RoadwaysBusBanner{
+    background-image: url(Assets/img/roadways_icon.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.PrivateBusBanner{
+    background-image: url(Assets/img/private_icon.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
 .Duration {
   position: relative;
   
@@ -60,6 +77,18 @@
     width: 100%;
     background-image: url(Assets/img/driver_view_bg.png);
     background-size: contain;
+    background-repeat: no-repeat;
+
+    
+}
+
+.SearchResultBanner{
+    width: 100%;
+    
+    background-image: url(Assets/img/search_banner.png);
+    background-size: contain;
+    
+    
     background-repeat: no-repeat;
     
 }

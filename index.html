@@ -10,10 +10,10 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
-<body class="flex flex-col">
+<body class="flex flex-col overflow-hidden">
     <!--LOGIN PAGE-->
     <div class="TopPart overflow-hidden border-4  bg-[#040214] rounded-b-3xl min-h-[300px] h-[30vh]">
-        <header class="border-4 flex flex-col">
+        <header class="border-4  flex flex-col">
             <div class="flex ">
                 <i class="fa-solid fa-arrow-left m-4 text-[30px]" style="color: #ffffff;"></i>
                 <p class="text-amber-50 mt-3 text-2xl">Back</p>
@@ -25,9 +25,9 @@
                 <p  class="text-amber-50 text-sm">Welcome to our Bus Tracker! Stay updated with real-time locations, schedules, and route info for a smoother travel experience</p>
 
                 </div>
-                <div class="TopPartImg ">
-                    <img class="rotate-5  scale-110 " src="Assets/img/roadways_icon.png" alt="Roadways img">
-                    <img class="mb-10 sm:scale-90  " src="Assets/img/private_icon.png" alt="Private bus">
+                <div class="TopPartImg absolute z-10 top-5 right-0 ">
+                    <img class="rotate-5 h-[15vh] w-[20vh]  " src="Assets/img/roadways_icon.png" alt="Roadways img">
+                    <img class="mb-10 h-[15vh] w-[20vh]" src="Assets/img/private_icon.png" alt="Private bus">
                 </div>
             </div>
             
@@ -36,7 +36,7 @@
 
     <div class="relative h-screen overflow-hidden">
         <!--overlay layer-->
-         <div class="absolute inset-0 BottomPartBg"></div>
+         <div class="absolute inset-0 h-[70vh] w-[100vh] BottomPartBg"></div>
         <div class="absolute inset-0 bg-gray-100/60"></div>
 
         <!--bottompart -->
