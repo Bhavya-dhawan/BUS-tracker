@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Driver view</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="fonts.css">
 </head>
@@ -17,14 +17,17 @@
         </div>
         <h2 class="text-2xl judson-regular">Ready To Drive?</h2>
     </header>
-    <h1 class="text-5xl relative text-center judson-regular  font-bold z-10 ">Select Route</h1>
-     <div class="PassengerSearchData absolute top-[20vh] self-center rounded-2xl bg-[#F9F9F9] w-[90vw] h-[40vh] shadow-2xl">
+    
+        <h1 class="text-5xl relative  text-center judson-regular  font-bold z-10 ">Select Route</h1>
+    
+     <div class="DriverStartData absolute lg:top-[35vh] sm:top-[30vh] top-[20vh] self-center rounded-2xl bg-[#F9F9F9] w-[90vw] h-[40vh] shadow-2xl">
+        
         <form  action="">
             <!--TO-->
-            <div class="PassengerDestination h-[10vh] items-center flex justify-start ml-11">
+            <div class="DriverDestination h-[10vh] items-center flex justify-start ml-11">
                     <div>
-                        <label for="PassengerDestinationValue"><i class="text-2xl fa-solid fa-location-dot" style="color: #050505;"></i></label>
-                <select class="px-5 text-2xl judson-regular " name="PassengerDestination" id="PassengerDestinationValue">
+                        <label for="DriverDestinationValue"><i class="text-2xl fa-solid fa-location-dot" style="color: #050505;"></i></label>
+                <select class="px-5 text-2xl judson-regular " name="DriverDestination" id="DriverDestinationValue">
                     <option value="1">Mullana</option>
                     <option value="2">YamunaNagar</option>
                     <option value="3">Jagadhru</option>
@@ -38,10 +41,10 @@
             <hr class="text-[#848484] opacity-50">
 
             <!--From-->
-            <div class="PassengerLocation h-[10vh] flex items-center justify-start ml-10">
+            <div class="DriverLocation h-[10vh] flex items-center justify-start ml-10">
                 <div>
-                    <label for="PassengerLocationValue"><i class="text-2xl fa-solid fa-street-view" style="color: #121212;"></i></label>
-                <select class="px-5  text-2xl judson-regular " name="PassengerLocation" id="PassengerLocationValue">
+                    <label for="DriverLocationValue"><i class="text-2xl fa-solid fa-street-view" style="color: #121212;"></i></label>
+                <select class="px-5  text-2xl judson-regular " name="DriverLocation" id="DriverLocationValue">
                     <option value="1">Mullana</option>
                     <option value="2">YamunaNagar</option>
                     <option value="3">Jagadhru</option>
@@ -54,12 +57,15 @@
             <hr class="text-[#848484] opacity-50">
 
             <!--AC-->
-            <div class="PassengerDate flex h-[10vh] items-center justify-start ml-11">
-                <div>
-                    <label class="px-5 text-black text-2xl judson-regular "  for="DriverAcValue"><i class="fa-solid fa-calendar text-2xl" style="color: #000000;"></i> Air-Conditioner </label>
+            <div class="DriverAc flex h-[10vh] items-center justify-start gap-5 ml-11">
+                
+                    <label class=" flex gap-7 text-black text-2xl judson-regular  "  for="DriverAcValue">
+                        <i class="fa-solid fa-calendar text-2xl" style="color: #000000;"></i>
+                         <h2 class=" text-black text-2xl judson-regular">Air-Conditioner </h2> 
+                    </label>
                     <input class="px-5 text-black text-2xl judson-regular " type="checkbox" id="DriverAcValue">
                 
-                </div>
+                
                     
             </div>
 
