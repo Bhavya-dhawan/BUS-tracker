@@ -12,7 +12,7 @@
 .BottomPartBg{
     width:100%;
     background-image: url('Assets/img/first_page_portrait.png');
-    background-size: contain;
+    background-size: cover;
     
     background-repeat: no-repeat;
 
