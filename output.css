@@ -9,6 +9,7 @@
       "Courier New", monospace;
     --color-amber-50: oklch(98.7% 0.022 95.277);
     --color-gray-100: oklch(96.7% 0.003 264.542);
+    --color-gray-600: oklch(44.6% 0.03 256.802);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -283,6 +284,9 @@
   .flex {
     display: flex;
   }
+  .h-\[7vh\] {
+    height: 7vh;
+  }
   .h-\[10vh\] {
     height: 10vh;
   }
@@ -391,6 +395,9 @@
   .gap-7 {
     gap: calc(var(--spacing) * 7);
   }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
+  }
   .gap-20 {
     gap: calc(var(--spacing) * 20);
   }
@@ -434,6 +441,13 @@
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
+  }
+  .border-none {
+    --tw-border-style: none;
+    border-style: none;
+  }
+  .bg-\[\#0B0528\] {
+    background-color: #0B0528;
   }
   .bg-\[\#7D2020\] {
     background-color: #7D2020;
@@ -479,6 +493,9 @@
   }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
+  }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
   }
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
@@ -557,8 +574,14 @@
   .text-black {
     color: var(--color-black);
   }
+  .text-gray-600 {
+    color: var(--color-gray-600);
+  }
   .text-white {
     color: var(--color-white);
+  }
+  .opacity-40 {
+    opacity: 40%;
   }
   .opacity-50 {
     opacity: 50%;
@@ -575,6 +598,10 @@
     --tw-brightness: brightness(75%);
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
+  .outline-none {
+    --tw-outline-style: none;
+    outline-style: none;
+  }
   .sm\:top-\[30vh\] {
     @media (width >= 40rem) {
       top: 30vh;
@@ -583,6 +610,11 @@
   .sm\:left-4 {
     @media (width >= 40rem) {
       left: calc(var(--spacing) * 4);
+    }
+  }
+  .sm\:gap-15 {
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 15);
     }
   }
   .sm\:text-3xl {
@@ -616,6 +648,11 @@
   .md\:w-\[5vw\] {
     @media (width >= 48rem) {
       width: 5vw;
+    }
+  }
+  .md\:gap-20 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 20);
     }
   }
   .md\:gap-70 {
@@ -725,6 +762,9 @@
   background-image: url(Assets/img/search_banner.png);
   background-size: contain;
   background-repeat: no-repeat;
+}
+hr {
+  opacity: 40%;
 }
 @property --tw-border-style {
   syntax: "*";
