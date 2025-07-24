@@ -5,49 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
      <link rel="stylesheet" href="output.css">
+     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="fonts.css">
 </head>
 <body class="flex flex-col items-center justify-center">
     <header class="flex justify-center items-center mt-5">
         <i class=" absolute fa-solid left-0 text-2xl sm:left-4  fa-arrow-left m-4 sm:text-[30px] z-20" style="color: #000000;"></i>
-        <h1 class="font-bold text-3xl">Bus Driver</h1>
+        <h1 class="font-bold text-3xl krub-bold">Bus Driver</h1>
     </header>
 
     <div >
-        <img class="h-[20vh] mt-5" src="Assets/img/roadways_drive_icon.png" alt="">
+        <img class="h-[30vh]  mt-5" src="Assets/img/roadways_drive_icon.png" alt="">
 
     </div>
 
     <form class="w-full mt-5" action="">
         <hr class="opacity-40">
-        <div class="h-[7vh] flex items-center gap-5 ml-5">
-            <label for="FirstName"><i class="fa-solid fa-user" style="color: #000000;"></i></label>
-            <input class="outline-none border-none" type="text" name="FirstName" id="FirstName" placeholder="First Name">
+        <div class="h-[10vh] flex items-center gap-5 ml-5">
+            <label for="FirstName"><i class="fa-regular fa-user" style="color: #000000;"></i></label>
+            <input class="outline-none border-none krub-bold" type="text" name="FirstName" id="FirstName" placeholder="First Name">
         </div>
         <hr>
-         <div class="h-[7vh] flex items-center gap-5 ml-5">
-            <label for="LastName"><i class="fa-solid fa-user" style="color: #000000;"></i></label>
-            <input class="outline-none border-none" type="text" name="LastName" id="LastName" placeholder="Last Name">
+         <div class="h-[10vh] flex items-center gap-5 ml-5">
+            <label for="LastName"><i class="fa-regular fa-user" style="color: #000000;"></i></label>
+            <input class="outline-none border-none krub-bold" type="text" name="LastName" id="LastName" placeholder="Last Name">
         </div>
         <hr>
-         <div class="h-[7vh] flex items-center gap-5 ml-5">
+         <div class="h-[10vh] flex items-center gap-5 ml-5">
             <label for="PassWord"><i class="fa-solid fa-lock" style="color: #000000;"></i></label>
-            <input class="outline-none border-none" type="text" name="PassWord" id="PassWord" placeholder = "Password..">
+            <input class="outline-none border-none krub-bold" type="text" name="PassWord" id="PassWord" placeholder = "Password..">
         </div>
         <hr>
-         <div class="h-auto flex  flex-col gap-2 ml-5">
+         <div class="h-auto  flex  flex-col gap-2 ml-5">
 
 
-            <div class="flex items-center gap-5"> 
+            <div class="flex mt-3 items-center gap-5"> 
                 <label for="Roadways"><i class="fa-solid fa-bus" style="color: #74C0FC;"></i></label>
-                <label class="text-2xl text-gray-600 " for="Roadways">Roadways</label>
+                <label class="text-2xl krub-bold text-gray-600 " for="Roadways">Roadways</label>
                 <input type="checkbox" name="Roadways" id="Roaways" placeholder="First Name">
             </div>
 
-            <div class="flex items-center  gap-5">
+            <div class="flex mb-3 items-center  gap-5">
                 <label for="Private"><i class="fa-solid fa-bus" style="color: #a60808;"></i></label>
-                <label class="text-2xl text-gray-600 " for="Private">Private</label>
+                <label class="text-2xl krub-bold text-gray-600 " for="Private">Private</label>
                 <input type="checkbox" name="Private" id="Private" placeholder="First Name">
             </div>
         </div>
