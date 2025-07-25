@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Location</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="fonts.css">
+</head>
+<body class="flex flex-col  justify-center items-center">
+    <header class="flex relative justify-center  w-full items-center">
+          
+        <i class="fa-solid left-0 text-2xl sm:left-4 absolute fa-arrow-left m-4 sm:text-[30px] z-20" style="color: #000000;"></i>
+        <img class="ml-20  h-[30vh] " src="Assets/img/roadways_icon.png" alt="">
+        
+    </header>
+
+<!--Live location ui-->
+    <div class="LocationContainer relative mt-5  border-l-3  pb-5 border-gray-700 ml-[30vw] w-full border-dotted">
+
+        <i class="text-3xl fa-regular fa-clock absolute -top-10  -left-4" style="color: #000000;"></i>
+
+        <!--Main for ui of timing and location-->
+        <div class="location flex  gap-5 mt-5 ml-5 w-full">
+            <div class="absolute -left-2.5">
+                <i class="text-2xl fa-solid fa-location-dot" style="color: #FF9500;"></i>
+            </div>
+            <div class="">
+                <h3 class="sm:text-2xl text-md font-bold text-[#797373] lilita-one-regular">2:05</h3>
+                <h3 class="sm:text-3xl text-lg  lilita-one-regular" >Ambala ,Haryana</h3>
+            </div>
+        </div>
+
+         <div class="location flex  gap-5 mt-5 ml-5 w-full">
+            <div class="absolute -left-2.5">
+                <i class="text-2xl fa-solid fa-location-dot" style="color: #FF9500;"></i>
+            </div>
+            <div class="">
+                <h3 class="sm:text-2xl text-md font-bold text-[#797373] lilita-one-regular">2:05</h3>
+                <h3 class="sm:text-3xl text-lg  lilita-one-regular" >Saha ,Haryana</h3>
+            </div>
+        </div>
+
+        <div class="location flex  gap-5 mt-5 ml-5 w-full">
+            <div class="absolute -left-2.5">
+                <i class="text-2xl fa-solid fa-location-dot" style="color: #FF9500;"></i>
+            </div>
+            <div class="">
+                <h3 class="sm:text-2xl text-md font-bold text-[#797373] lilita-one-regular">2:05</h3>
+                <h3 class="sm:text-3xl text-lg  lilita-one-regular" >Mullana ,Haryana</h3>
+            </div>
+        </div>
+
+        <div class="location flex  gap-5 mt-5 ml-5 w-full">
+            <div class="absolute -left-2.5">
+                <i class="text-2xl fa-solid fa-location-dot" style="color: #FF9500;"></i>
+            </div>
+            <div class="">
+                <h3 class="sm:text-2xl text-md font-bold text-[#797373] lilita-one-regular">2:05</h3>
+                <h3 class="sm:text-3xl text-lg  lilita-one-regular" >Yamunanagar ,Haryana</h3>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--live location ui end-->
+
+    <div class="LiveLocationBtn mt-3 flex flex-col gap-5 w-full ml-30 justify-start">
+        <form class="" action="">
+            <label class="bg-[#C9C4C4] rounded-2xl px-5 py-2 text-md alexandria" for="OnTheBus">Are you on this Bus?</label>
+        <input class="ml-5 cursor-pointer " type="checkbox" name="OnTheBus" id="OnTheBus">
+        </form>
+        
+        <button class="bg-[#C9C4C4] rounded-2xl  lg:w-[12vw] md:w-[15vw] sm:w-[20vw] w-[25vw] py-2 text-md  alexandria" >Request Help</button>
+
+    </div>
+</body>
+</html>

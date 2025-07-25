@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="fonts.css">
 </head>
 <body class="flex flex-col">
-    <div class="ViewBg w-full inset-0 absolute opacity-50 rounded-b-2xl"></div>
+    <div class="ViewBg w-full inset-0 absolute md:bg-cover opacity-50 rounded-b-2xl"></div>
     <header class="z-10 relative flex flex-col items-end mr-5 ">
         <div class="flex items-center">
             <img class="w-[20vw] [@media(min-width:600px)]:w-[10vw] font-semibold" src="Assets/img/logo.png" alt="">
@@ -20,7 +20,7 @@
     </header>
 
     <!--FORM-->
-    <div class="PassengerSearchData absolute top-[20vh] self-center rounded-2xl bg-[#F9F9F9] w-[90vw] h-[40vh] shadow-2xl">
+    <div class="PassengerSearchData absolute md:top-[25vh] top-[20vh] self-center rounded-2xl bg-[#F9F9F9] md:max-w-[60vw] w-[90vw] h-[40vh] shadow-2xl">
         <form  action="">
             <!--TO-->
             <div class="PassengerDestination h-[10vh] items-center flex justify-start ml-11">
@@ -74,15 +74,16 @@
     </div>
 
     <!--Title-->
-    <div class="Info top-[65vh] ml-5 absolute">
+    <div class="Info top-[65vh] md:top-[100vh] ml-5 absolute">
         <h2 class="text-black text-lg lilita-one-regular">BUSES RIGHT NOW ON YOUR ROUTE</h2>
         <h4 class="FromTo text-[#979797] lilita-one-regular">From Ambala to YNR</h4>
+         <a href="location.html">location</a>
 
 <!--Bus info container-->
-        <div class="LiveBusContainer flex flex-col lg:gap-80 md:gap-70 gap-60">
+        <div class="LiveBusContainer flex flex-col lg:gap-60 md:gap-70 gap-60">
 <!--Bus info-->
 
-            <div class="absolute LiveBus w-[90vw] min-h-[180px] h-[20vh] bg-[#D9D9D9] rounded-2xl mt-5 -z-20 overflow-hidden shadow-xl">
+            <div class="absolute LiveBus md:w-[50vw] w-[90vw] min-h-[180px] h-[20vh] bg-[#D9D9D9] rounded-2xl mt-5 -z-20 overflow-hidden shadow-xl">
             <div class="LiveBusBanner absolute w-full inset-0 opacity-50 ml-[30vw] -z-10 "></div>
            
            
@@ -114,20 +115,20 @@
 
         </div>
 
-
+<!--final version of bus schedules-->
         <div class="static">
-            <div class="absolute   LiveBus w-[90vw] min-h-[180px] h-[20vh] bg-[#D9D9D9] rounded-2xl mt-5 -z-20 overflow-hidden shadow-xl">
+            <div class="absolute LiveBus  md:w-[60vw] w-[90vw] min-h-[180px] h-auto bg-[#D9D9D9] rounded-2xl mt-5 pb-2 -z-20 overflow-hidden shadow-xl">
             <div class="RoadwaysBusBanner absolute w-full inset-0 opacity-50 ml-[30vw] -z-10 "></div>
            
            
             <div class="flex items-center gap-2 m-3 z-50">
                 <h2 class="text-[#2C7CD7] text-2xl lilita-one-regular">ROADWAYS</h2>
-                <img src="Assets/img/ac.png" alt="" class=" w-[10vw] md:w-[5vw] [@media(min-width:450px)]:w-[6vw] lg:w-[1vw] z-10">
+                <img src="Assets/img/ac.png" alt="" class=" w-[30px]  z-10">
 
             </div>
 
 
-            <div class="flex justify-center sm:gap-15 md:gap-20 gap-10">
+            <div class="flex justify-center sm:gap-10 md:gap-20 gap-5">
                 <div>
                     <h2 class="StartTime lilita-one-regular">2:05 PM</h2>
                     <h5 class="StartStop lilita-one-regular">Ambala</h5>
@@ -143,25 +144,28 @@
             </div>
 
             <div class = " flex self-center md:mt-10 mt-5 ml-3">
-                    <input class="text-white lilita-one-regular bg-[#10072B] rounded-2xl w-[40vw] md:text-xl py-2 px-4" type="button" value="View LiveLocation">
+                    <input class="text-white lilita-one-regular bg-[#10072B] rounded-2xl w-[40vw] md:w-[30vw] md:text-xl py-2 px-4" type="button" value="View LiveLocation">
+                    
                 </div>
+
+               
 
         </div>
         </div>
 
         <div class="static">
-            <div class="absolute   LiveBus w-[90vw] min-h-[180px] h-[20vh] bg-[#D9D9D9] rounded-2xl mt-5 -z-20 overflow-hidden shadow-xl">
+            <div class="absolute LiveBus  md:w-[60vw] w-[90vw] min-h-[180px] h-auto bg-[#D9D9D9] rounded-2xl mt-5 pb-2 -z-20 overflow-hidden shadow-xl">
             <div class="RoadwaysBusBanner absolute w-full inset-0 opacity-50 ml-[30vw] -z-10 "></div>
            
            
             <div class="flex items-center gap-2 m-3 z-50">
                 <h2 class="text-[#2C7CD7] text-2xl lilita-one-regular">ROADWAYS</h2>
-                <img src="Assets/img/ac.png" alt="" class=" w-[10vw] md:w-[5vw] [@media(min-width:450px)]:w-[6vw] lg:w-[1vw] z-10">
+                <img src="Assets/img/ac.png" alt="" class=" w-[30px]  z-10">
 
             </div>
 
 
-            <div class="flex justify-center gap-20">
+            <div class="flex justify-center sm:gap-10 md:gap-20 gap-5">
                 <div>
                     <h2 class="StartTime lilita-one-regular">2:05 PM</h2>
                     <h5 class="StartStop lilita-one-regular">Ambala</h5>
@@ -177,7 +181,7 @@
             </div>
 
             <div class = " flex self-center md:mt-10 mt-5 ml-3">
-                    <input class="text-white lilita-one-regular bg-[#10072B] rounded-2xl w-[40vw] md:text-xl py-2 px-4" type="button" value="View LiveLocation">
+                    <input class="text-white lilita-one-regular bg-[#10072B] rounded-2xl w-[40vw] md:w-[30vw] md:text-xl py-2 px-4" type="button" value="View LiveLocation">
                 </div>
 
         </div>
@@ -185,18 +189,18 @@
 
 
         <div class="static">
-            <div class="absolute   LiveBus w-[90vw] min-h-[180px] h-[20vh] bg-[#D9D9D9] rounded-2xl mt-5 -z-20 overflow-hidden shadow-xl">
+            <div class="absolute LiveBus  md:w-[60vw] w-[90vw] min-h-[180px] h-auto bg-[#D9D9D9] rounded-2xl mt-5 pb-2 -z-20 overflow-hidden shadow-xl">
             <div class="RoadwaysBusBanner absolute w-full inset-0 opacity-50 ml-[30vw] -z-10 "></div>
            
            
             <div class="flex items-center gap-2 m-3 z-50">
                 <h2 class="text-[#2C7CD7] text-2xl lilita-one-regular">ROADWAYS</h2>
-                <img src="Assets/img/ac.png" alt="" class=" w-[10vw] md:w-[5vw] [@media(min-width:450px)]:w-[6vw] lg:w-[1vw] z-10">
+                <img src="Assets/img/ac.png" alt="" class=" w-[30px]  z-10">
 
             </div>
 
 
-            <div class="flex justify-center sm:gap-15 md:gap-20 gap-10">
+            <div class="flex justify-center sm:gap-10 md:gap-20 gap-5">
                 <div>
                     <h2 class="StartTime lilita-one-regular">2:05 PM</h2>
                     <h5 class="StartStop lilita-one-regular">Ambala</h5>
@@ -212,25 +216,26 @@
             </div>
 
             <div class = " flex self-center md:mt-10 mt-5 ml-3">
-                    <input class="text-white lilita-one-regular bg-[#10072B] rounded-2xl w-[40vw] md:text-xl py-2 px-4" type="button" value="View LiveLocation">
+                    <input class="text-white lilita-one-regular bg-[#10072B] rounded-2xl w-[40vw] md:w-[30vw] md:text-xl py-2 px-4" type="button" value="View LiveLocation">
                 </div>
 
         </div>
         </div>
 
+
         <div class="static">
-            <div class="absolute   LiveBus w-[90vw] min-h-[180px] h-[20vh] bg-[#D9D9D9] rounded-2xl mt-5 -z-20 overflow-hidden shadow-xl">
+            <div class="absolute LiveBus  md:w-[60vw] w-[90vw] min-h-[180px] h-auto bg-[#D9D9D9] rounded-2xl mt-5 pb-2 -z-20 overflow-hidden shadow-xl">
             <div class="RoadwaysBusBanner absolute w-full inset-0 opacity-50 ml-[30vw] -z-10 "></div>
            
            
             <div class="flex items-center gap-2 m-3 z-50">
                 <h2 class="text-[#2C7CD7] text-2xl lilita-one-regular">ROADWAYS</h2>
-                <img src="Assets/img/ac.png" alt="" class=" w-[10vw] md:w-[5vw] [@media(min-width:450px)]:w-[6vw] lg:w-[1vw] z-10">
+                <img src="Assets/img/ac.png" alt="" class=" w-[30px]  z-10">
 
             </div>
 
 
-            <div class="flex justify-center gap-20">
+            <div class="flex justify-center sm:gap-10 md:gap-20 gap-5">
                 <div>
                     <h2 class="StartTime lilita-one-regular">2:05 PM</h2>
                     <h5 class="StartStop lilita-one-regular">Ambala</h5>
@@ -246,7 +251,7 @@
             </div>
 
             <div class = " flex self-center md:mt-10 mt-5 ml-3">
-                    <input class="text-white lilita-one-regular bg-[#10072B] rounded-2xl w-[40vw] md:text-xl py-2 px-4" type="button" value="View LiveLocation">
+                    <input class="text-white lilita-one-regular bg-[#10072B] rounded-2xl w-[40vw] md:w-[30vw] md:text-xl py-2 px-4" type="button" value="View LiveLocation">
                 </div>
 
         </div>
