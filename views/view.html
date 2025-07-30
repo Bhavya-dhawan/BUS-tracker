@@ -4,34 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>view</title>
-    <link rel="stylesheet" href="output.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href = "../output.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="../fonts.css">
 </head>
 <body class="flex flex-col">
     <div class="ViewBg w-full inset-0 absolute md:bg-cover opacity-50 rounded-b-2xl"></div>
     <header class="z-10 relative flex flex-col items-end mr-5 ">
         <div class="flex items-center">
-            <img class="w-[20vw] [@media(min-width:600px)]:w-[10vw] font-semibold" src="Assets/img/logo.png" alt="">
+            <img class="logo w-[20vw] [@media(min-width:600px)]:w-[10vw] font-semibold" src="Assets/img/logo.png" alt="">
             <h1 class="text-4xl judson-regular  ">MMDU BUS</h1>
         </div>
-        <h2 class="text-2xl judson-regular">FIND YOUR BUS</h2>
+        <h2 class="text-2xl judson-regular">FIN YOUR BUS</h2>
     </header>
 
     <!--FORM-->
     <div class="PassengerSearchData absolute md:top-[25vh] top-[20vh] self-center rounded-2xl bg-[#F9F9F9] md:max-w-[60vw] w-[90vw] h-[40vh] shadow-2xl">
-        <form  action="">
+        <form class="ViewForm">
             <!--TO-->
             <div class="PassengerDestination h-[10vh] items-center flex justify-start ml-11">
                     <div>
                         <label for="PassengerDestinationValue"><i class="text-2xl fa-solid fa-location-dot" style="color: #050505;"></i></label>
                 <select class="px-5 text-2xl judson-regular " name="PassengerDestination" id="PassengerDestinationValue">
-                    <option value="1">Mullana</option>
-                    <option value="2">YamunaNagar</option>
-                    <option value="3">Jagadhru</option>
-                    <option value="4">Dosadka</option>
-                    <option value="5">Thana Chappar</option>
+                    <option value="Mullana">Mullana</option>
+                    <option value="YamunaNagar">YamunaNagar</option>
+                    <option value="Jagadhri">Jagadhri</option>
+                    <option value="Dosadka">Dosadka</option>
+                    <option value="Thana Chappar">Thana Chappar</option>
                 </select>
                     </div>
             
@@ -41,14 +41,14 @@
 
             <!--From-->
             <div class="PassengerLocation h-[10vh] flex items-center justify-start ml-10">
-                <div>
-                    <label for="PassengerLocationValue"><i class="text-2xl fa-solid fa-street-view" style="color: #121212;"></i></label>
+                <div class=" w-full ">
+                    <label  for="PassengerLocationValue"><i class="text-2xl fa-solid fa-street-view" style="color: #121212;"></i></label>
                 <select class="px-5  text-2xl judson-regular " name="PassengerLocation" id="PassengerLocationValue">
-                    <option value="1">Mullana</option>
-                    <option value="2">YamunaNagar</option>
-                    <option value="3">Jagadhru</option>
-                    <option value="4">Dosadka</option>
-                    <option value="5">Thana Chappar</option>
+                     <option value="Mullana">Mullana</option>
+                    <option value="YamunaNagar">YamunaNagar</option>
+                    <option value="Jagadhri">Jagadhri</option>
+                    <option value="Dosadka">Dosadka</option>
+                    <option value="Thana Chappar">Thana Chappar</option>
                 </select>
                 </div>
                     
@@ -59,14 +59,14 @@
             <div class="PassengerDate flex h-[10vh] items-center justify-start ml-11">
                 <div>
                     <label for="PassengerDateValue"><i class="fa-solid fa-calendar text-2xl" style="color: #000000;"></i></label>
-                    <input class="px-5  text-2xl judson-regular " type="date" name="" id="PassengerDateValue">
+                    <input class="px-5  text-2xl judson-regular " type="text" placeholder="Select Date" onfocus="(this.type='date')"  name="" id="PassengerDateValue">
                 
                 </div>
                     
             </div>
             <hr class="text-[#848484] opacity-50">
             <div class="h-[10vh] flex items-center justify-center">
-                <a href="SearchResult.html">search</a>
+                <a href="../SearchResult.html">search</a>
                 <input class="bg-[#10072B] rounded-4xl text-3xl py-3 w-[80%] judson-regular  text-white" type="submit" value="Search">
             </div>
         </form>
@@ -267,4 +267,7 @@
     
 
 </body>
+
+<script src="script.js"></script>
+<script src="/functionality.js"></script>
 </html>

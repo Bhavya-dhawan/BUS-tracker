@@ -21,7 +21,7 @@
 
 .ViewBg{
     width: 100%;
-    background-image: url(Assets/img/passenger_view_banner.png);
+    background-image: url(../Assets/img/passenger_view_banner.png);
     background-size:contain;
     background-repeat: no-repeat;
     

@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Results</title>
-      <link rel="stylesheet" href="output.css">
-    <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href = "../output.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="../fonts.css">
 </head>
 <body>
 <!--
@@ -39,8 +39,8 @@
 
             <div class="w-full flex flex-col  items-center mt-10 ">
                     <div class="flex relative justify-center  w-full items-center">
-                    <i class="fa-solid left-0 text-2xl sm:left-4 absolute fa-arrow-left m-4 sm:text-[30px] z-20" style="color: #ffffff;"></i>
-                    <h1 class="self-center relative text-white sm:text-5xl text-4xl lilita-one-regular font-bold">Place TO Place</h1>
+                    <i class="fa-solid left-0 text-2xl sm:left-4 absolute fa-arrow-left m-4 sm:text-[30px] hover:cursor-pointer z-20" onclick="history.back()"  style="color: #ffffff;"></i>
+                    <h1 class="SearchResultHeading self-center relative text-white sm:text-5xl text-4xl lilita-one-regular font-bold"></h1>
                     </div>
 
                     <h4 class="text-white text-2xl lilita-one-regular sm:text-3xl">Nov 6, 2006</h4>
@@ -284,4 +284,12 @@
 
 
 </body>
+
+<script src="script.js"></script>
+<script src="/functionality.js"></script>
+
+<script>
+    const SearchResultHeading = document.querySelector(".SearchResultHeading")
+    SearchResultHeading.textContent = `${localStorage.getItem('DestinationValue')} TO ${localStorage.getItem('LocationValue')}`
+</script>
 </html>
